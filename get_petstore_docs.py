@@ -1,4 +1,4 @@
-import petstore_docs
+import petstore_user_API.petstore_docs as petstore_docs
 import requests
 
 def get_docs():
