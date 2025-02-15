@@ -9,15 +9,41 @@ user_body = {
   "userStatus": 0
 }
 
+user_body_for_change = {
+  "id": 12,
+  "username": "FirstSecond",
+  "firstName": "First",
+  "lastName": "Second",
+  "email": "firstsecond@mail.ru",
+  "password": "123",
+  "phone": "12",
+  "userStatus": 0
+}
+
+user_body_for_delete = {
+  "id": 10,
+  "username": "GarryPotterDelete",
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_params = {
+
+}
+
 changed_user_body = {
-  "id": 1,
-  "username": "GarryPotter",
+  "id": 12,
+  "username": "FirstSecond",
   "firstName": "Optimus",
   "lastName": "Prime",
   "email": "autobots@mail.ru",
-  "password": "123",
+  "password": "1234",
   "phone": "100",
-  "userStatus": 0
+  "userStatus": 1
 }
 
 list_of_users = [
