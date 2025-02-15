@@ -112,7 +112,3 @@ pet_data_for_image = {
 pet_data_without_params_in_body = {
     
 }
-
-headers = {
-    "Content-Type": "application/json"
-}
