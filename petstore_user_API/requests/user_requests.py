@@ -1,5 +1,5 @@
-import petstore_docs
-import user_data
+import petstore_docs as petstore_docs
+import petstore_user_API.data.user_data as user_data
 import requests
 
 user_path = '/v2/user'
