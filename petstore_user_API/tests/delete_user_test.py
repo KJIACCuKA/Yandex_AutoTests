@@ -1,5 +1,5 @@
-import petstore_user_API.requests.user_requests as user_requests
-import petstore_user_API.data.user_data as user_data
+import user_requests as user_requests
+import user_data as user_data
 import requests
 
 # Проверка, что можно удалить существующего пользователя

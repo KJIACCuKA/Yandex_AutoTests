@@ -1,5 +1,5 @@
-import petstore_docs as petstore_docs
-import petstore_user_API.data.user_data as user_data
+import petstore_docs
+import user_data as user_data
 import requests
 
 user_path = '/v2/user'
@@ -20,7 +20,12 @@ def get_user(username):
 
 # Авторизация пользователя
 def user_login(username, password):
-    return requests.get(petstore_docs.petstore_docs_url + user_path + '/login?username=' + username + '&' + 'password=' + password)
+    params = {
+        'username': username,
+        'password': password
+
+    }
+    return requests.get(petstore_docs.petstore_docs_url + user_path, params=params)
 
 # Выход из аккаунта пользователя
 def user_logout():
