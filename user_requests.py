@@ -25,7 +25,7 @@ def user_login(username, password):
         'password': password
 
     }
-    return requests.get(petstore_docs.petstore_docs_url + user_path, params=params)
+    return requests.get(petstore_docs.petstore_docs_url + user_path + '/login?', params=params)
 
 # Выход из аккаунта пользователя
 def user_logout():

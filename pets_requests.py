@@ -27,11 +27,17 @@ def find_pet_by_status(status):
 def update_pet_data(change_body):
     return requests.put(petstore_docs.petstore_docs_url + pet_path, json=change_body, headers=pets_data.headers)
 
-# Обновить имя и статус питомца
-def update_pet_name_and_status(pet_id, name):
-    current_body = pets_data.pet_data.copy()
-    current_body["name"] = name
-    return requests.post(f'{petstore_docs.petstore_docs_url}/{pet_path}/{pet_id}', json=current_body, headers=pets_data.headers)
+# Обновить фотографию в карточке питомца
+def update_pet_image(pet_id):
+    add_new_pet_to_the_store(pets_data.pet_data_for_image)
+    
+    return requests.post(f'{petstore_docs.petstore_docs_url}/{pet_path}/{pet_id}', json=pets_data.pet_data_for_image, headers=pets_data.headers)
 
-responce = update_pet_name_and_status(1, "test")
-print(responce.status_code)
+res = update_pet_image(102)
+print(res.status_code)
+
+# Обновить имя и статус питомца
+# def update_pet_name_and_status(pet_id, name):
+#     current_body = pets_data.pet_data.copy()
+#     current_body["name"] = name
+#     return requests.post(f'{petstore_docs.petstore_docs_url}/{pet_path}/{pet_id}', json=current_body, headers=pets_data.headers)

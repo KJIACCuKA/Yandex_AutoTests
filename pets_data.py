@@ -74,6 +74,45 @@ changed_pet_data = {
   "status": "available"
 }
 
+pet_data_without_id = {
+  "category": {
+    "id": 101
+  },
+  "photoUrls": [
+    "url"
+  ],
+  "tags": [
+    {
+      "id": 101,
+      "name": "cool"
+    }
+  ],
+  "status": "available"
+}
+
+pet_data_for_image = {
+  "id": 102,
+  "category": {
+    "id": 102,
+    "name": "Image"
+  },
+  "name": "image",
+  "photoUrls": [
+    "dog.jpeg"
+  ],
+  "tags": [
+    {
+      "id": 102,
+      "name": "cool"
+    }
+  ],
+  "status": "available"
+}
+
+pet_data_without_params_in_body = {
+    
+}
+
 headers = {
     "Content-Type": "application/json"
 }
