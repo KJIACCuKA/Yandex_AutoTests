@@ -1,5 +1,5 @@
 user_body = {
-  "id": 1,
+  "id": 100,
   "username": "GarryPotter",
   "firstName": "Garry",
   "lastName": "Potter",
@@ -8,6 +8,87 @@ user_body = {
   "phone": "934",
   "userStatus": 0
 }
+
+user_body_without_id = {
+  "username": "GarryPotter1",
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_username = {
+    "id": 102,
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_first_name = {
+  "id": 103,
+  "username": "GarryPotter2",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_last_name = {
+  "id": 104,
+  "username": "GarryPotter3",
+  "firstName": "Garry",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_email = {
+  "id": 105,
+  "username": "GarryPotter4",
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "password": "123",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_password = {
+  "id": 106,
+  "username": "GarryPotter",
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "phone": "934",
+  "userStatus": 0
+}
+
+user_body_without_phone = {
+  "id": 107,
+  "username": "GarryPotter5",
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "userStatus": 0
+}
+
+user_body_without_userStatus = {
+  "id": 108,
+  "username": "GarryPotter6",
+  "firstName": "Garry",
+  "lastName": "Potter",
+  "email": "iamamagic@mail.ru",
+  "password": "123",
+  "phone": "934",
+}
+
 
 user_body_for_change = {
   "id": 12,
@@ -21,7 +102,7 @@ user_body_for_change = {
 }
 
 user_body_for_delete = {
-  "id": 10,
+  "id": 109,
   "username": "GarryPotterDelete",
   "firstName": "Garry",
   "lastName": "Potter",
@@ -48,7 +129,7 @@ changed_user_body = {
 
 list_of_users = [
   {
-    "id": 3,
+    "id": 111,
     "username": "Megatron",
     "firstName": "Mega",
     "lastName": "tron",
@@ -58,7 +139,7 @@ list_of_users = [
     "userStatus": 0
   },
   {
-    "id": 4,
+    "id": 112,
     "username": "BumbleBee",
     "firstName": "Bumble",
     "lastName": "Bee",

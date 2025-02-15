@@ -22,6 +22,9 @@ def get_user(username):
 def user_login(username, password):
     return requests.get(petstore_docs.petstore_docs_url + user_path + '/login?username=' + username + '&' + 'password=' + password)
 
+# Выход из аккаунта пользователя
+def user_logout():
+    return requests.get(petstore_docs.petstore_docs_url + user_path + '/logout')
 
 # Изменяем данные пользователя
 def change_user_data(changed_body, username):
