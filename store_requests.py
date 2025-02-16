@@ -1,8 +1,8 @@
 import requests
-import store_data
+import Petstore_API.petstore_store_API.data.store_data as store_data
 import petstore_docs
-import url_paths
-import headers
+import url_paths.url_paths as url_paths
+import headers.headers as headers
 
 # Оформить заказ на домашнее животное
 def place_an_order_for_a_pet(body):

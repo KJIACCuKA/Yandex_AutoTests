@@ -1,8 +1,8 @@
 import petstore_docs
-import user_data as user_data
+import Petstore_API.petstore_user_API.data.user_data as user_data
 import requests
-import url_paths
-import headers
+import url_paths.url_paths as url_paths
+import headers.headers as headers
 
 
 

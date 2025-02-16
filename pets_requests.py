@@ -1,8 +1,8 @@
 import requests
-import pets_data as pets_data
+import Petstore_API.petstore_pet_API.data.pets_data as pets_data
 import petstore_docs as petstore_docs
-import url_paths
-import headers
+import url_paths.url_paths as url_paths
+import headers.headers as headers
 
 # Добавить питомца в магазин
 def add_new_pet_to_the_store(body):
