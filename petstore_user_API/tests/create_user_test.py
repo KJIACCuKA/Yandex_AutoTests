@@ -1,6 +1,7 @@
 import user_requests as user_requests
 import user_data as user_data
-import requests
+
+# POST /user
 
 # Проверка, что пользователь создается
 def test_user_created():
@@ -9,11 +10,6 @@ def test_user_created():
     assert responce.json()["code"] == 200
     assert responce.json()["type"] == "unknown"
     assert responce.json()["message"] == f'{user_data.user_body["id"]}'
-
-# Проверка, что создается несколько пользователей
-def test_users_created():
-    responce = user_requests.create_list_of_users(user_data.list_of_users)
-    assert responce.status_code == 200
 
 # В документации позволено создать пользователя без данных
 def test_user_created_with_body_without_params():
@@ -70,3 +66,10 @@ def test_user_created_with_body_without_userStatus():
     assert responce.json()["code"] == 200
     assert responce.json()["type"] == "unknown"
     assert responce.json()["message"] == f'{user_data.user_body_without_userStatus["id"]}'
+
+# POST /user/createWithList
+
+# Проверка, что создается несколько пользователей
+def test_users_created():
+    responce = user_requests.create_list_of_users(user_data.list_of_users)
+    assert responce.status_code == 200

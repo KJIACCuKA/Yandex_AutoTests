@@ -1,6 +1,7 @@
 import user_requests as user_requests
 import user_data as user_data
-import requests
+
+# PUT /user/{username}
 
 # Проверка, что данные пользователя изменяются
 def test_user_data_changed():

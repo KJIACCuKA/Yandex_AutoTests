@@ -1,6 +1,7 @@
 import pets_requests
 import pets_data
-import requests
+
+# POST /pet
 
 # Если создать питомца без id в теле запроса, то id ему присвоится автоматически
 def test_create_pet_without_id_in_body():

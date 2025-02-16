@@ -149,7 +149,3 @@ list_of_users = [
     "userStatus": 0
   }
 ]
-
-headers = {
-    "Content-Type": "application/json"
-}
