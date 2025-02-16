@@ -1,5 +1,5 @@
 import user_requests as user_requests
-import user_data as user_data
+import Petstore_API.petstore_user_API.data.user_data as user_data
 
 # DELETE /user/{username}
 

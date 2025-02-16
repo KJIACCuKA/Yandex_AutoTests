@@ -1,5 +1,5 @@
-import pets_requests
-import pets_data
+import pets_requests as pets_requests
+import Petstore_API.petstore_pet_API.data.pets_data as pets_data
 
 
 # DELETE /pet/{petId}

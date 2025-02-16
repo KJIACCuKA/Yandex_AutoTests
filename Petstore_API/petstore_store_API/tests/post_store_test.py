@@ -1,5 +1,5 @@
-import store_requests
-import store_data
+import store_requests as store_requests
+import Petstore_API.petstore_store_API.data.store_data as store_data
 
 # POST /store/order
 

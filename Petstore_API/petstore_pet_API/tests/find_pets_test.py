@@ -1,4 +1,4 @@
-import pets_requests
+import pets_requests as pets_requests
 
 # GET /pet/{petId}
 
