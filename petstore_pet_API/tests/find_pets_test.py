@@ -1,6 +1,6 @@
 import pets_requests
-import pets_data
-import requests
+
+# GET /pet/{petId}
 
 # Проверка, что питомца можно найти по id
 def test_find_pets_by_id():
@@ -14,6 +14,8 @@ def test_cant_find_pets_by_doesnt_exist_id():
     assert responce.json()["code"] == 1
     assert responce.json()["type"] == "error"
     assert responce.json()["message"] == "Pet not found"
+
+# GET /pet/findByStatus
 
 # Проверка, что питомца можно найти по статусу 'sold'
 def test_find_pet_by_status_sold():

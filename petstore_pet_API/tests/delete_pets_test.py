@@ -1,6 +1,9 @@
 import pets_requests
 import pets_data
-import requests
+
+
+# DELETE /pet/{petId}
+
 
 # Проверка, что можно удалить питомца
 def test_delete_pet():
